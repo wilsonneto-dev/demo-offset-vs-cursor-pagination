@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Seeder-5C8BAED6-5236-4232-9DE8-F357D1C5B6B8</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Bogus" Version="35.5.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Data\Data.csproj" />
+    </ItemGroup>
+</Project>
